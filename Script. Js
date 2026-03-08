@@ -1,0 +1,95 @@
+function randomTip(){
+
+let tips = [
+"Always use high ground.",
+"Upgrade your armor early.",
+"Carry smoke grenades.",
+"Listen to footsteps carefully.",
+"Stay inside the safe zone early."
+];
+
+let random = tips[Math.floor(Math.random()*tips.length)];
+
+document.getElementById("tip").innerText = random;
+
+}
+
+function bestGun(){
+
+let guns = [
+"AK117",
+"M4",
+"Oden",
+"AK47",
+"Holger 26"
+];
+
+let random = guns[Math.floor(Math.random()*guns.length)];
+
+document.getElementById("gun").innerText = random;
+
+}
+
+function bestClass(){
+
+let classes = [
+"Ninja",
+"Medic",
+"Defender",
+"Clown",
+"Smoke Bomber"
+];
+
+let random = classes[Math.floor(Math.random()*classes.length)];
+
+document.getElementById("class").innerText = random;
+
+}
+function calcSens(){
+
+let sens = document.getElementById("sens").value;
+
+let pro = sens * 1.1;
+
+document.getElementById("result").innerText =
+"Suggested Pro Sensitivity: " + Math.round(pro);
+
+}
+function loadout(){
+
+let guns = ["AK117","M4","Oden","AK47","Holger"];
+
+let perks = ["Extended Mag","Long Range","Fast ADS"];
+
+let gun = guns[Math.floor(Math.random()*guns.length)];
+let perk = perks[Math.floor(Math.random()*perks.length)];
+
+document.getElementById("loadout").innerText =
+gun + " + " + perk;
+
+}
+function spot(){
+
+let map = document.getElementById("map").value;
+
+let tip = "";
+
+if(map=="Farm"){
+tip="Good loot but many enemies early.";
+}
+
+if(map=="Black Market"){
+tip="High loot area but dangerous drop.";
+}
+
+if(map=="Dock"){
+tip="Good for vehicles and safe rotations.";
+}
+
+if(map=="Bus Station"){
+tip="Balanced loot and safer landing.";
+}
+
+document.getElementById("spotTip").innerText = tip;
+
+}
