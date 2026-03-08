@@ -1,0 +1,38 @@
+<h1>CODM Battle Royale Pro Guide</h1>
+
+<h2>🎯 Random BR Tip</h2>
+<p id="tip">Click the button to get a pro tip.</p>
+<button onclick="randomTip()">Get Tip</button>
+
+<h2>🔫 Best Gun Generator</h2>
+<p id="gun">Click to generate best BR gun.</p>
+<button onclick="bestGun()">Generate Gun</button>
+
+<h2>🛡 Best Class Picker</h2>
+<p id="class">Click to pick a BR class.</p>
+<button onclick="bestClass()">Pick Class</button>
+<h2>🎯 Sensitivity Calculator</h2>
+
+<label>Your Current Sensitivity:</label>
+<input type="number" id="sens">
+
+<button onclick="calcSens()">Calculate Pro Sens</button>
+
+<p id="result"></p>
+<h2>🔫 Random BR Loadout</h2>
+
+<p id="loadout">Click button to generate loadout</p>
+
+<button onclick="loadout()">Generate Loadout</button>
+<h2>🗺 BR Landing Spot Tips</h2>
+
+<select id="map">
+<option>Farm</option>
+<option>Black Market</option>
+<option>Dock</option>
+<option>Bus Station</option>
+</select>
+
+<button onclick="spot()">Show Tip</button>
+
+<p id="spotTip"></p>
